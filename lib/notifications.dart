@@ -60,9 +60,12 @@ class Notifications extends StatelessWidget {
         ),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: 2,
+          type: BottomNavigationBarType.fixed, // Fixed
+          backgroundColor: Colors.white, // <-- This works for fixed
+          selectedItemColor: Color.fromRGBO(65, 92, 253, 1),
+          unselectedItemColor: Colors.grey,
           items: const [
             BottomNavigationBarItem(
-              backgroundColor: Colors.red,
               icon: Icon(Icons.home),
               label: 'Home',
             ),
